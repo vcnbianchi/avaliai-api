@@ -1,0 +1,36 @@
+{
+  "name": "avaliai-api",
+  "version": "1.0.0",
+  "description": "API do aplicativo Avaliaí",
+  "main": "dist/interfaces/server.js",
+  "type": "module",
+  "engines": {
+    "node": "22.18.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest --run",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
+    "dev": "tsx watch src/interfaces/server.ts"
+  },
+  "keywords": [
+    "api",
+    "avaliai",
+    "reviews"
+  ],
+  "author": "Victor Bianchi",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "fastify": "^5.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@vitest/ui": "^3.2.4",
+    "tsx": "^4.20.4",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
